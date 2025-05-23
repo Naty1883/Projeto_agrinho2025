@@ -40,20 +40,20 @@ header {
 }
 
 .imagem {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 20px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
 .campo {
   background-color: #d4f5d0;
-  border-left: 5px solid #4caf50;
+  border-left: 5px solid #0c550f;
 }
 
 .cidade {
   background-color: #dbe7ff;
-  border-left: 5px solid #2196f3;
+  border-left: 5px solid #094b81;
 }
 
 h2 {
