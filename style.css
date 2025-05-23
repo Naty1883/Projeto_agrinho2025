@@ -1,3 +1,4 @@
+/* Reset e configuração base */
 * {
   margin: 0;
   padding: 0;
@@ -6,74 +7,101 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #9eccb0 50%, #80a8e4 50%);
+  background: linear-gradient(to bottom, #e0f7e9 50%, #e6f0ff 50%);
   color: #333;
   line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #277999ef;
+  background-color: #4caf50;
   color: white;
 }
 
+/* Container principal */
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 2rem 1rem;
+  gap: 2rem;
 }
 
+/* Seções individuais */
 .section {
-  flex: 1 1 300px;
-  margin: 1rem;
+  flex: 1 1 500px;
+  background-color: white;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  background-color: white;
+  position: relative;
 }
 
+/* Efeito de zoom ao passar o mouse */
 .section:hover {
   transform: scale(1.03);
 }
 
+/* Imagem com tamanho fixo e arredondada */
 .imagem {
-  width: 70%;
-  height: 20px;
-  border-radius: 8px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
   margin-bottom: 1rem;
+  border: 2px solid #ccc;
 }
 
+/* Temas distintos */
 .campo {
   background-color: #d4f5d0;
-  border-left: 5px solid #0c550f;
+  border-left: 8px solid #4caf50;
 }
 
 .cidade {
   background-color: #dbe7ff;
-  border-left: 5px solid #094b81;
+  border-left: 8px solid #2196f3;
 }
 
+/* Títulos e parágrafos */
 h2 {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 p {
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
+/* Rodapé */
 footer {
   text-align: center;
   padding: 1.5rem;
   background-color: #333;
   color: white;
   font-size: 0.9rem;
+  margin-top: 2rem;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    width: 90%;
+  }
+
+  .imagem {
+    height: 200px;
   }
 }
