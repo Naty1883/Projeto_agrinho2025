@@ -7,9 +7,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #e0f7e9 50%, #e6f0ff 50%);
+  background: linear-gradient(to bottom, #d4f8d0 0%, #d4f5d0 50%, #dbe7ff 50%, #dbe7ff 100%);
   color: #333;
   line-height: 1.6;
+}
+
 }
 
 /* Cabeçalho */
@@ -59,13 +61,13 @@ header {
 
 /* Temas distintos */
 .campo {
-  background-color: #d4f5d0;
-  border-left: 8px solid #4caf50;
+  background-color: #9be593;
+  border-left: 8px solid #2e8131;
 }
 
 .cidade {
-  background-color: #dbe7ff;
-  border-left: 8px solid #2196f3;
+  background-color: #a9bce2;
+  border-left: 8px solid #0d538b;
 }
 
 /* Títulos e parágrafos */
